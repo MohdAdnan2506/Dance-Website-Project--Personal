@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title XYZ Dance Academy
+    style
+       include ../static/style.css
+  body
+    nav#navbar.top 
+        ul 
+            div#logo 
+                img(src="../static/img/logo.png")
+                | XYZ 
+            li #[a(href="/") Home]
+            li #[a(href="/") About Us] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") Class Info] 
+            li #[a(href="/") Contact Us] 
+
+    section#introSection 
+        div.heading  Welcome to XYZ Dance Academy
+        div.small   Eat-Sleep-Dance-Repeat
+        div.IntroPara 
+         p "Dance is an Art, paint your dream and follow it." - Steven Thompson
+
+    section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Perfection
+            div.card-box 
+                div.card-image 
+                    img(src="/static/img/2.png")
+                div.card-Content 
+                 p Practice Makes a Man Perfect. We believe in perfection. 
+
+        div.card
+            h3 Quality 
+            div.card-box 
+                div.card-image 
+                    img(src="/static/img/3.png")
+                div.card-Content 
+                 p Providing Quality Assistance to our Students. 
+        div.card
+            h3 Consistency 
+            div.card-box 
+                div.card-image 
+                    img(src="/static/img/2.png")
+                div.card-Content 
+                 p Consistency is the hallmark of the unimaginative.
+
+    section#sponsorsSection 
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/static/img/apple-logo.png", alt="Sponsors Image" class="spImage")
+            img(src="/static/img/facebook-logo.png", alt="Sponsors Image" class="spImage")
+            img(src="/static/img/microsoft.png", alt="Sponsors Image" class="spImage")
+
+    footer#footer
+        | Copyright © www.XYZDanceAcademy.com | All rights reserved!
+
+    script
+      include ../static/index.js
