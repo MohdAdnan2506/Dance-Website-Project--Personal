@@ -21,7 +21,6 @@ app.get('/contact', (req, res) => {
     res.status(200).render('contact.pug', params)
 });
 
-
 // Starting the Server -
 app.listen(port, () => {
     console.log(`The app started running successfully on port ${port}`);
