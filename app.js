@@ -12,17 +12,20 @@ app.set('view engine', 'pug') // Setting the template engine as pug
 app.set('views', path.join(__dirname, 'views')) // For Setting the view directory
 
 // ENDPOINTS - 
-app.get('/' , (req, res)=>{
-    const params = {  }
+app.get('/', (req, res) => {
+    const params = {}
     res.status(200).render('home.pug', params)
 });
-app.get('/contact' , (req, res)=>{
-    const params = {  }
+app.get('/contact', (req, res) => {
+    const params = {}
     res.status(200).render('contact.pug', params)
+
+
+
 });
 
 
 // Starting the Server -
-app.listen(port, ()=>{
-    console.log(`The app started running successfully on ${port}`);
+app.listen(port, () => {
+    console.log(`The app started running successfully on port ${port}`);
 });
